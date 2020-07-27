@@ -41,12 +41,12 @@ function numPressed(element) {
       decimalControl = 1;
     }
     if (numberControl == 0){
-      display+=element;
+      display += element;
       setDis(display);
     }
     if (numberControl == 1){
       display = '';
-      display+=element;
+      display += element;
       setDis(display);
       numberControl = 0;
     }
@@ -56,7 +56,7 @@ function numPressed(element) {
 function operatorPressed(sign){
     decimalControl = 0;
     if(operatorControl == 1){
-        equalSignPressed();
+        equalPressed();
     }
     operatorSign = sign;
     numberControl = 1;
@@ -108,6 +108,8 @@ function operate(num1, operator, num2) {
         default:
             return undefined;
     };
+
+    
 };
 
 //Sets the display

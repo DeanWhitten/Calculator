@@ -34,6 +34,8 @@ document.getElementById("mult_btn").addEventListener('click', () => {operatorPre
 document.getElementById("div_btn").addEventListener('click', () => {operatorPressed('/')});
 //Equal sign Buttons
 document.getElementById("enter_btn").addEventListener('click', () => {equalPressed()});
+//Clear Button
+document.getElementById("clear_btn").addEventListener('click', () => {clearDisplay()});
 
 //Numbers evaluation to pass to display 
 function numPressed(element) {
@@ -118,7 +120,11 @@ function setDis() {
 }
 
 
+//Clears the display
+function clearDisplay() {
+   location.reload();
 
+}
 
 
 
